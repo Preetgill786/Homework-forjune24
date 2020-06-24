@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Button</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+//         //Way 1+++++++++++
+//         //+++By making different functions
+
+// function b1(){
+              
+//                     document.getElementById('pText').innerHTML = "You pressed button 1";
+//                 }
+//               function b2() {
+//                     document.getElementById('pText').innerHTML = "You pressed Button 2";
+//                 }
+//                 function b3() {
+//                     document.getElementById('pText').innerHTML = "You pressed Button3 ";
+//                 }
+
+
+//++++way 2===
+//+++ using button id on if statement in one function
+
+function changeText(button) {
+                
+                if(button == "b1") {
+                    document.getElementById('pText').innerHTML = "You pressed button 1";
+                }
+
+                if(button == "b2") {
+                    document.getElementById('pText').innerHTML = "You pressed button 2";
+                }
+
+                if(button == "b3") {
+                    document.getElementById('pText').innerHTML = "You pressed button 3";
+                }
+
+            }
+
+
+           
+
+
+        </script>
+
+        <input type="button" value="Button 1" id="b1" onclick="changeText(this.id);"/>
+        <input type="button" value="Button 2" id="b2" onclick="changeText(this.id);"/>
+        <input type="button" value="Button 3" id="b3" onclick="changeText(this.id);"/>
+
+        <p id="pText">Click on a Button</p>
+    </body>
+</html>
